@@ -1,0 +1,109 @@
+# Auto generated configuration file
+# using: 
+# Revision: 1.19 
+# Source: /local/reps/CMSSW/CMSSW/Configuration/Applications/python/ConfigBuilder.py,v 
+# with command line options: nanoAOD_jetToolbox_cff -s NANO --data --eventcontent NANOAOD --datatier NANOAOD --no_exec --conditions 106X_dataRun2_v35 --era Run2_2018,run2_nanoAOD_106Xv2 --customise_commands=process.add_(cms.Service('InitRootHandlers', EnableIMT = cms.untracked.bool(False))) --customise JMEAnalysis/JetToolbox/nanoAOD_jetToolbox_cff.nanoJTB_customizeMC --filein file:/cms/se/phedex/store/data/Run2018A/EGamma/MINIAOD/12Nov2019_UL2018-v2/100000/017E4F7F-26F4-2D4D-87C5-6E58954FDEC8.root --fileout file:jetToolbox_nano_datatest.root
+import FWCore.ParameterSet.Config as cms
+
+from Configuration.Eras.Era_Run2_2018_cff import Run2_2018
+from Configuration.Eras.Modifier_run2_nanoAOD_106Xv2_cff import run2_nanoAOD_106Xv2
+
+process = cms.Process('NANO',Run2_2018,run2_nanoAOD_106Xv2)
+
+# import of standard configurations
+process.load('Configuration.StandardSequences.Services_cff')
+process.load('SimGeneral.HepPDTESSource.pythiapdt_cfi')
+process.load('FWCore.MessageService.MessageLogger_cfi')
+process.MessageLogger.cerr.FwkReport.reportEvery = 1000
+process.load('Configuration.EventContent.EventContent_cff')
+process.load('Configuration.StandardSequences.GeometryRecoDB_cff')
+process.load('Configuration.StandardSequences.MagneticField_AutoFromDBCurrent_cff')
+process.load('PhysicsTools.NanoAOD.nano_cff')
+process.load('Configuration.StandardSequences.EndOfProcess_cff')
+process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
+
+process.maxEvents = cms.untracked.PSet(
+    input = cms.untracked.int32(-1)
+)
+
+print("test1")
+
+# Input source
+process.source = cms.Source("PoolSource",
+    fileNames = cms.untracked.vstring('file:/cms/se/phedex/store/data/Run2018A/EGamma/MINIAOD/17Sep2018-v2/100000/0004A5E9-9F18-6B42-B31D-4206406CE423.root'),
+    secondaryFileNames = cms.untracked.vstring()
+)
+
+process.options = cms.untracked.PSet(
+
+)
+
+print("test2")
+
+# Production Info
+process.configurationMetadata = cms.untracked.PSet(
+    annotation = cms.untracked.string('nanoAOD_jetToolbox_cff nevts:1'),
+    name = cms.untracked.string('Applications'),
+    version = cms.untracked.string('$Revision: 1.19 $')
+)
+
+# Output definition
+print("test3")
+
+
+process.NANOAODoutput = cms.OutputModule("NanoAODOutputModule",
+    compressionAlgorithm = cms.untracked.string('LZMA'),
+    compressionLevel = cms.untracked.int32(9),
+    dataset = cms.untracked.PSet(
+        dataTier = cms.untracked.string('NANOAOD'),
+        filterName = cms.untracked.string('')
+    ),
+    fileName = cms.untracked.string('file:jetToolbox_nano_datatest3.root'),
+    outputCommands = process.NANOAODEventContent.outputCommands
+)
+print("test4")
+
+# Additional output definition
+
+# Other statements
+from Configuration.AlCa.GlobalTag import GlobalTag
+process.GlobalTag = GlobalTag(process.GlobalTag, '106X_dataRun2_v35', '')
+
+# Path and EndPath definitions
+process.nanoAOD_step = cms.Path(process.nanoSequence)
+process.endjob_step = cms.EndPath(process.endOfProcess)
+process.NANOAODoutput_step = cms.EndPath(process.NANOAODoutput)
+
+print("test5")
+
+# Schedule definition
+process.schedule = cms.Schedule(process.nanoAOD_step,process.endjob_step,process.NANOAODoutput_step)
+from PhysicsTools.PatAlgos.tools.helpers import associatePatAlgosToolsTask
+associatePatAlgosToolsTask(process)
+
+# customisation of the process.
+
+# Automatic addition of the customisation function from PhysicsTools.NanoAOD.nano_cff
+from PhysicsTools.NanoAOD.nano_cff import nanoAOD_customizeData 
+
+#call to customisation function nanoAOD_customizeData imported from PhysicsTools.NanoAOD.nano_cff
+process = nanoAOD_customizeData(process)
+
+# Automatic addition of the customisation function from JMEAnalysis.JetToolbox.nanoAOD_jetToolbox_cff
+from JMEAnalysis.JetToolbox.nanoAOD_jetToolbox_cff import nanoJTB_customizeMC 
+
+#call to customisation function nanoJTB_customizeMC imported from JMEAnalysis.JetToolbox.nanoAOD_jetToolbox_cff
+process = nanoJTB_customizeMC(process)
+
+# End of customisation functions
+print("test6")
+
+# Customisation from command line
+
+process.add_(cms.Service('InitRootHandlers', EnableIMT = cms.untracked.bool(False)))
+# Add early deletion of temporary data products to reduce peak memory need
+from Configuration.StandardSequences.earlyDeleteSettings_cff import customiseEarlyDelete
+process = customiseEarlyDelete(process)
+# End adding early deletion
+print("test7")
+

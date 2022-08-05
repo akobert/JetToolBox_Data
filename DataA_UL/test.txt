@@ -1,0 +1,70 @@
+test1
+test2
+test3
+test4
+test5
+Will recalculate the following discriminators on AK8 jets: pfParticleNetMassRegressionJetTags:mass
+test9
+test8
+False
+|---- jetToolbox: Initializing collection... (with postfix )
+|---- jetToolBox: Adding these btag discriminators: ['pfDeepCSVJetTags:probb', 'pfDeepCSVJetTags:probbb', 'pfDeepCSVJetTags:probc', 'pfDeepCSVJetTags:probudsg'] in the jet collection.
+|---- jetToolBox: DeepCSV and DeepFlavour btag discriminators were trained for AK4 CHS jets. You are trying to use it in other configuration. Use it at your own risk.
+test11
+|---- jetToolBox: JETTOOLBOX RUNNING ON MiniAOD FOR AK4 JETS USING Puppi
+|---- jetToolBox: Applying these corrections: ('AK4PFPuppi', ['L2Relative', 'L3Absolute', 'L2L3Residual'], 'None')
+|---- jetToolBox: Creating selectedPatJetsAK4PFPuppi collection.
+[1m|---- jetToolBox: RUNNING FROM MINIAOD BUT STORING VARIABLES IN NANOAOD FORMAT.[0m
+test12
+************** MC dependence removal ************
+removing MC dependencies for jets
+|---- jetToolBox: List of modules created (and other internal names):
+      PATJetsLabel = AK4PFPuppi
+      PATJetsLabelPost = AK4PFPuppi
+      SubstructureLabel = AK4Puppi
+      GenJetsNoNu = ak4GenJetsNoNu
+      PFJets = ak4PFJetsPuppi
+      PFJetsConstituents = ak4PFJetsPuppiConstituents
+      PFJetsConstituentsColon = ak4PFJetsPuppiConstituents:constituents
+      PFJetsConstituentsColonOrUpdate = ak4PFJetsPuppiConstituents:constituents
+      PATJets = patJetsAK4PFPuppi
+      selPATJets = selectedPatJetsAK4PFPuppi
+      PFJetsOrUpdate = ak4PFJetsPuppi
+      looseJetId = patJetsAK4PFPuppilooseJetId
+      tightJetId = patJetsAK4PFPuppitightJetId
+      tightJetIdLepVeto = patJetsAK4PFPuppitightJetIdLepVeto
+      PATJetswithUserData = patJetsAK4PFPuppiPATJetswithUserData
+      jetToolboxJetTable = selectedPatJetsAK4PFPuppiJTBTable
+test8
+False
+|---- jetToolbox: Initializing collection... (with postfix )
+|---- jetToolBox: Adding these btag discriminators: ['pfCombinedInclusiveSecondaryVertexV2BJetTags', 'pfCombinedCvsLJetTags', 'pfCombinedCvsBJetTags'] in the subjet collection.
+|---- jetToolBox: Adding these btag discriminators: ['pfBoostedDoubleSecondaryVertexAK8BJetTags'] in the jet collection.
+test11
+|---- jetToolBox: JETTOOLBOX RUNNING ON MiniAOD FOR AK8 JETS USING Puppi
+|---- jetToolBox: Applying these corrections: ('AK8PFPuppi', ['L2Relative', 'L3Absolute', 'L2L3Residual'], 'None')
+|---- jetToolBox: Creating packedPatJetsAK8PFPuppiSoftDrop collection with SoftDrop subjets.
+|---- jetToolBox: Running ak8PFJetsPuppiSoftDropMass, selectedPatJetsAK8PFPuppiSoftDropPacked:SubJets, ak8PFJetsPuppiPrunedMass, NjettinessAK8Puppi, nb1AK8PuppiSoftDrop, nb1AK8PuppiSoftDropSubjets.
+|---- jetToolBox: Creating selectedPatJetsAK8PFPuppi collection.
+[1m|---- jetToolBox: RUNNING FROM MINIAOD BUT STORING VARIABLES IN NANOAOD FORMAT.[0m
+test12
+************** MC dependence removal ************
+removing MC dependencies for jets
+test10
+test6
+test7
+                         : Booking "muonMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/mu_BDTG_2017.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/mu_BDTG_2017.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "muonMVALowPt" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "electronMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/el_BDTG_2017.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/el_BDTG_2017.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"

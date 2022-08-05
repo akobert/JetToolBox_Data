@@ -1,0 +1,1319 @@
+-------------------------------------------------------------------
+ Info: To run c tagging on MiniAOD, c-tag-specific IVF secondary
+       vertices will be remade.
+-------------------------------------------------------------------
+test1
+test2
+test3
+test4
+test5
+Will recalculate the following discriminators on AK8 jets: pfParticleNetMassRegressionJetTags:mass
+test9
+test8
+False
+|---- jetToolbox: Initializing collection... (with postfix )
+|---- jetToolBox: Adding these btag discriminators: ['pfDeepCSVJetTags:probb', 'pfDeepCSVJetTags:probbb', 'pfDeepCSVJetTags:probc', 'pfDeepCSVJetTags:probudsg'] in the jet collection.
+|---- jetToolBox: DeepCSV and DeepFlavour btag discriminators were trained for AK4 CHS jets. You are trying to use it in other configuration. Use it at your own risk.
+test11
+|---- jetToolBox: JETTOOLBOX RUNNING ON MiniAOD FOR AK4 JETS USING Puppi
+|---- jetToolBox: Applying these corrections: ('AK4PFPuppi', ['L2Relative', 'L3Absolute', 'L2L3Residual'], 'None')
+|---- jetToolBox: Creating selectedPatJetsAK4PFPuppi collection.
+[1m|---- jetToolBox: RUNNING FROM MINIAOD BUT STORING VARIABLES IN NANOAOD FORMAT.[0m
+test12
+************** MC dependence removal ************
+removing MC dependencies for jets
+|---- jetToolBox: List of modules created (and other internal names):
+      PATJetsLabel = AK4PFPuppi
+      PATJetsLabelPost = AK4PFPuppi
+      SubstructureLabel = AK4Puppi
+      GenJetsNoNu = ak4GenJetsNoNu
+      PFJets = ak4PFJetsPuppi
+      PFJetsConstituents = ak4PFJetsPuppiConstituents
+      PFJetsConstituentsColon = ak4PFJetsPuppiConstituents:constituents
+      PFJetsConstituentsColonOrUpdate = ak4PFJetsPuppiConstituents:constituents
+      PATJets = patJetsAK4PFPuppi
+      selPATJets = selectedPatJetsAK4PFPuppi
+      PFJetsOrUpdate = ak4PFJetsPuppi
+      looseJetId = patJetsAK4PFPuppilooseJetId
+      tightJetId = patJetsAK4PFPuppitightJetId
+      tightJetIdLepVeto = patJetsAK4PFPuppitightJetIdLepVeto
+      PATJetswithUserData = patJetsAK4PFPuppiPATJetswithUserData
+      jetToolboxJetTable = selectedPatJetsAK4PFPuppiJTBTable
+test8
+False
+|---- jetToolbox: Initializing collection... (with postfix )
+|---- jetToolBox: Adding these btag discriminators: ['pfCombinedInclusiveSecondaryVertexV2BJetTags', 'pfCombinedCvsLJetTags', 'pfCombinedCvsBJetTags'] in the subjet collection.
+|---- jetToolBox: Adding these btag discriminators: ['pfBoostedDoubleSecondaryVertexAK8BJetTags'] in the jet collection.
+test11
+|---- jetToolBox: JETTOOLBOX RUNNING ON MiniAOD FOR AK8 JETS USING Puppi
+|---- jetToolBox: Applying these corrections: ('AK8PFPuppi', ['L2Relative', 'L3Absolute', 'L2L3Residual'], 'None')
+|---- jetToolBox: Creating packedPatJetsAK8PFPuppiSoftDrop collection with SoftDrop subjets.
+|---- jetToolBox: Running ak8PFJetsPuppiSoftDropMass, selectedPatJetsAK8PFPuppiSoftDropPacked:SubJets, ak8PFJetsPuppiPrunedMass, NjettinessAK8Puppi, nb1AK8PuppiSoftDrop, nb1AK8PuppiSoftDropSubjets.
+|---- jetToolBox: Creating selectedPatJetsAK8PFPuppi collection.
+[1m|---- jetToolBox: RUNNING FROM MINIAOD BUT STORING VARIABLES IN NANOAOD FORMAT.[0m
+test12
+************** MC dependence removal ************
+removing MC dependencies for jets
+test10
+test6
+test7
+16-Jan-2022 16:50:01 EST  Initiating request to open file file:/cms/se/phedex/store/data/Run2018A/EGamma/MINIAOD/UL2018_MiniAODv2-v1/230000/1DC29AF8-7091-4245-A0D8-CFDF650310CC.root
+16-Jan-2022 16:50:05 EST  Successfully opened file file:/cms/se/phedex/store/data/Run2018A/EGamma/MINIAOD/UL2018_MiniAODv2-v1/230000/1DC29AF8-7091-4245-A0D8-CFDF650310CC.root
+                         : Booking "muonMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/mu_BDTG_2017.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/mu_BDTG_2017.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "muonMVALowPt" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "electronMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/el_BDTG_2017.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/el_BDTG_2017.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+%MSG-e L1PrefireWeightProducer:  L1PrefiringWeightProducer:prefiringweight@ctor  16-Jan-2022 16:50:12 EST pre-events
+Photon map not found. All photons prefiring weights set to 0. 
+%MSG
+%MSG-e L1PrefireWeightProducer:  L1PrefiringWeightProducer:prefiringweight@ctor  16-Jan-2022 16:50:12 EST pre-events
+Jet map not found. All jets prefiring weights set to 0. 
+%MSG
+Begin processing the 1st record. Run 316701, Event 407570858, LumiSection 283 on stream 0 at 16-Jan-2022 16:50:33.521 EST
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_HBHENoiseFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_HBHENoiseIsoFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_CSCTightHaloFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_CSCTightHaloTrkMuUnvetoFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_CSCTightHalo2015Filter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_globalTightHalo2016Filter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_globalSuperTightHalo2016Filter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_HcalStripHaloFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_hcalLaserEventFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_EcalDeadCellTriggerPrimitiveFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_EcalDeadCellBoundaryEnergyFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_ecalBadCalibFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_goodVertices already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_eeBadScFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_ecalLaserCorrFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_trkPOGFilters already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_chargedHadronTrackResolutionFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_muonBadTrackFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_BadChargedCandidateFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_BadPFMuonFilter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_BadChargedCandidateSummer16Filter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_BadPFMuonSummer16Filter already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_trkPOG_manystripclus53X already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_trkPOG_toomanystripclus53X already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_trkPOG_logErrorTooManyClusters already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w TriggerOutputBranches:  NanoAODOutputModule:NANOAODoutput  16-Jan-2022 16:50:41 EST Run: 316701 Event: 407570858
+Found a branch with name Flag_METFilters already present with title Trigger/flag bit (process: PAT): will add suffix _pRECO to the new branch.
+
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 16:51:31 EST Run: 316701 Event: 407247268
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.54851e+16 1.00659e+16-2.31583e+16-0.000854887 -0.00163234
+   1.00659e+16-2.70175e+15 6.19224e+15 0.000223898 0.000426594
+  -2.31583e+16 6.19224e+15-1.46384e+16-0.000792644 -0.00154472
+  -0.000854887 0.000223898-0.000792644 0.000267411 0.000539381
+   -0.00163234 0.000426594 -0.00154472 0.000539381  0.00109777 ]
+%MSG
+Begin processing the 1001st record. Run 316701, Event 406611740, LumiSection 283 on stream 0 at 16-Jan-2022 16:52:28.313 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 16:52:45 EST Run: 316701 Event: 406755169
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -5.74505e+21 6.77588e+18-7.33057e+18     6018.03       60020
+   6.77588e+18-7.99165e+15 8.64597e+15    -7.09833    -70.7943
+  -7.33057e+18 8.64597e+15-9.32685e+15     7.62742     76.0711
+       6018.03    -7.09833     7.62742   0.0390517    0.389433
+         60020    -70.7943     76.0711    0.389433     3.88386 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 16:53:53 EST Run: 316701 Event: 407619701
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -9.08278e+14 1.29229e+14-9.54269e+14     2.95636     3.30793
+   1.29229e+14-2.44224e+12 1.13808e+14   -0.275441   -0.308197
+  -9.54269e+14 1.13808e+14-1.23917e+14    0.858185    0.960238
+       2.95636   -0.275441    0.858185      1.3253     1.48291
+       3.30793   -0.308197    0.960238     1.48291     1.65926 ]
+%MSG
+Begin processing the 2001st record. Run 316701, Event 407560792, LumiSection 283 on stream 0 at 16-Jan-2022 16:54:12.161 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 16:54:13 EST Run: 316701 Event: 407139738
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -4.15784e+15 1.54596e+15-4.97931e+15 -0.00724805 -0.00444584
+   1.54596e+15 1.89254e+14 -7.3622e+13-0.000111947-6.86748e-05
+  -4.97931e+15 -7.3622e+13 2.89447e+14-0.000692669-0.000424949
+   -0.00724805-0.000111947-0.000692669  0.00191139  0.00117164
+   -0.00444584-6.86748e-05-0.000424949  0.00117164 0.000718726 ]
+%MSG
+Begin processing the 3001st record. Run 316701, Event 407308865, LumiSection 283 on stream 0 at 16-Jan-2022 16:55:55.755 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 16:57:11 EST Run: 316701 Event: 406627820
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -8.52111e+13-6.96496e+13 4.56445e+12   0.0107452    0.166836
+  -6.96496e+13-3.87741e+13 1.81813e+13  0.00612729   0.0951351
+   4.56445e+12 1.81813e+13 8.61123e+13 -0.00141191  -0.0219408
+     0.0107452  0.00612729 -0.00141191   0.0165368    0.256649
+      0.166836   0.0951351  -0.0219408    0.256649     3.98449 ]
+%MSG
+Begin processing the 4001st record. Run 316701, Event 407778569, LumiSection 283 on stream 0 at 16-Jan-2022 16:57:38.183 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 16:57:40 EST Run: 316701 Event: 406406536
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.64681e+17 4.70738e+15 3.73998e+15     5.42705    -1.70876
+   4.70738e+15 3.97044e+13 4.72228e+12   0.0174397 -0.00549104
+   3.73998e+15 4.72228e+12 9.85855e+14 -0.00305028 0.000960325
+       5.42705   0.0174397 -0.00305028  0.00874339 -0.00275261
+      -1.70876 -0.00549104 0.000960325 -0.00275261 0.000867863 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 16:58:49 EST Run: 316701 Event: 406320563
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -6.04844e+16-2.58976e+14-8.21335e+15 0.000311254  0.00114174
+  -2.58976e+14 4.94115e+13-2.71556e+13 8.05028e-05  0.00024783
+  -8.21335e+15-2.71556e+13-9.63196e+14  2.4241e-05 0.000101903
+   0.000311254 8.05028e-05  2.4241e-05  0.00014594 0.000355968
+    0.00114174  0.00024783 0.000101903 0.000355968  0.00114116 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 16:59:13 EST Run: 316701 Event: 407723254
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.38942e+16-1.33069e+14 1.39577e+16 0.000246508-0.000148861
+  -1.33069e+14  2.6949e+12 6.33472e+13-5.04555e-05 1.96846e-05
+   1.39577e+16 6.33472e+13-6.36317e+15-0.000250096 0.000132593
+   0.000246508-5.04555e-05-0.000250096  0.00211005-0.000696102
+  -0.000148861 1.96846e-05 0.000132593-0.000696102  0.00033169 ]
+%MSG
+Begin processing the 5001st record. Run 316701, Event 406611026, LumiSection 283 on stream 0 at 16-Jan-2022 16:59:20.249 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:00:55 EST Run: 316701 Event: 421330170
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.67692e+16 7.70003e+16-1.69699e+14-0.000753805  0.00751747
+   7.70003e+16-1.45951e+17 2.68544e+14  0.00142877  -0.0142489
+  -1.69699e+14 2.68544e+14-2.74517e+12-2.36957e-05 0.000113931
+  -0.000753805  0.00142877-2.36957e-05  6.9071e-05-0.000260455
+    0.00751747  -0.0142489 0.000113931-0.000260455  0.00264546 ]
+%MSG
+Begin processing the 6001st record. Run 316701, Event 420762385, LumiSection 293 on stream 0 at 16-Jan-2022 17:01:03.794 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:01:06 EST Run: 316701 Event: 420649489
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.93559e+16 1.13684e+17 1.55785e+13 4.97461e-06 3.29084e-05
+   1.13684e+17-2.33053e+17-3.19306e+13 -1.0198e-05-6.74626e-05
+   1.55785e+13-3.19306e+13 8.46505e+13-6.62612e-06-3.22297e-06
+   4.97461e-06 -1.0198e-05-6.62612e-06 2.23224e-05 1.23759e-05
+   3.29084e-05-6.74626e-05-3.22297e-06 1.23759e-05 3.11895e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:02:11 EST Run: 316701 Event: 421303523
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.28498e+17-1.93991e+15 1.55655e+14 1.60545e-05 0.000201526
+  -1.93991e+15 1.49089e+14-3.25362e+13 2.28126e-07 2.37718e-06
+   1.55655e+14-3.25362e+13 7.74761e+14-1.14663e-07 2.08952e-06
+   1.60545e-05 2.28126e-07-1.14663e-07 1.44751e-06 1.82369e-06
+   0.000201526 2.37718e-06 2.08952e-06 1.82369e-06  7.5226e-06 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:02:35 EST Run: 316701 Event: 420536111
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -3.55499e+14-4.20358e+11-1.87582e+14-1.45654e-05 1.29942e-06
+  -4.20358e+11  4.1363e+12-2.53381e+12-1.32451e-06 5.74718e-08
+  -1.87582e+14-2.53381e+12-4.82573e+13-7.55078e-06 6.95918e-07
+  -1.45654e-05-1.32451e-06-7.55078e-06 7.31127e-05-8.64012e-06
+   1.29942e-06 5.74718e-08 6.95918e-07-8.64012e-06 1.83695e-06 ]
+%MSG
+Begin processing the 7001st record. Run 316701, Event 420572106, LumiSection 293 on stream 0 at 16-Jan-2022 17:02:51.528 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:03:16 EST Run: 316701 Event: 421637833
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -7.97105e+12-2.73088e+13-2.92658e+13    -9.33571     3.42256
+  -2.73088e+13-1.58679e+12-6.97491e+11    -1.82047    0.667402
+  -2.92658e+13-6.97491e+11 2.01566e+12    -1.09793    0.402507
+      -9.33571    -1.82047    -1.09793     9.44716     -3.4634
+       3.42256    0.667402    0.402507     -3.4634     1.26973 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:03:57 EST Run: 316701 Event: 420798481
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.09829e+16 3.02176e+16 1.31049e+15 1.11021e-05 2.47145e-05
+   3.02176e+16 -6.3504e+16-2.94018e+15-2.36461e-05-5.20356e-05
+   1.31049e+15-2.94018e+15-2.93708e+16-8.72456e-05-2.72464e-05
+   1.11021e-05-2.36461e-05-8.72456e-05 3.08908e-05 3.32734e-05
+   2.47145e-05-5.20356e-05-2.72464e-05 3.32734e-05 7.43282e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:03:58 EST Run: 316701 Event: 421880216
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -1.3416e+13-8.73568e+12  3.5551e+13 0.000195279 4.63746e-05
+  -8.73568e+12 5.87175e+12-2.99332e+11-1.86368e-06-4.47406e-07
+    3.5551e+13-2.99332e+11 3.57869e+13-0.000110387-2.60877e-05
+   0.000195279-1.86368e-06-0.000110387  0.00100198 0.000233246
+   4.63746e-05-4.47406e-07-2.60877e-05 0.000233246 5.55527e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:04:20 EST Run: 316701 Event: 421786852
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.11553e+18 1.68182e+16 1.07665e+17   0.0142352  0.00223321
+   1.68182e+16 -2.5235e+14-1.57333e+15-0.000207185-3.25021e-05
+   1.07665e+17-1.57333e+15-7.46807e+15-0.000988599-0.000154999
+     0.0142352-0.000207185-0.000988599 0.000170241 2.73885e-05
+    0.00223321-3.25021e-05-0.000154999 2.73885e-05  4.8623e-06 ]
+%MSG
+Begin processing the 8001st record. Run 316701, Event 421469194, LumiSection 293 on stream 0 at 16-Jan-2022 17:04:34.262 EST
+Begin processing the 9001st record. Run 316701, Event 420996787, LumiSection 293 on stream 0 at 16-Jan-2022 17:06:16.307 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:06:29 EST Run: 316701 Event: 420856862
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.60527e+15-6.44595e+14  2.5365e+14 9.85297e-05  0.00127756
+  -6.44595e+14-1.28712e+14 1.00365e+14 1.99005e-05 0.000256304
+    2.5365e+14 1.00365e+14 2.76673e+14-1.12417e-05-0.000131255
+   9.85297e-05 1.99005e-05-1.12417e-05 1.55698e-05 0.000170082
+    0.00127756 0.000256304-0.000131255 0.000170082  0.00213181 ]
+%MSG
+Begin processing the 10001st record. Run 316701, Event 421085661, LumiSection 293 on stream 0 at 16-Jan-2022 17:08:02.138 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:09:25 EST Run: 316701 Event: 420613493
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -5.9227e+15-1.82954e+15-3.98199e+15-0.000510534-0.000949574
+  -1.82954e+15-3.54124e+14-7.31566e+14-0.000100191-0.000186331
+  -3.98199e+15-7.31566e+14-2.25624e+15-0.000288658-0.000538219
+  -0.000510534-0.000100191-0.000288658 5.01306e-05 8.90583e-05
+  -0.000949574-0.000186331-0.000538219 8.90583e-05 0.000165631 ]
+%MSG
+Begin processing the 11001st record. Run 316701, Event 440912265, LumiSection 306 on stream 0 at 16-Jan-2022 17:09:45.563 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:10:55 EST Run: 316701 Event: 441269583
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -8.09893e+15-1.69695e+16-1.27174e+15 0.000103941-9.00317e-05
+  -1.69695e+16-3.44942e+16-2.58411e+15 0.000211284-0.000183009
+  -1.27174e+15-2.58411e+15-6.61503e+17-1.02487e-05 6.03241e-06
+   0.000103941 0.000211284-1.02487e-05 7.04303e-06-5.35831e-06
+  -9.00317e-05-0.000183009 6.03241e-06-5.35831e-06 5.42707e-06 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:10:55 EST Run: 316701 Event: 441269583
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.81381e+16-2.76756e+16 6.89662e+15-3.35466e-05 3.87765e-05
+  -2.76756e+16-4.22281e+16  1.0523e+16-5.11862e-05  5.9166e-05
+   6.89662e+15  1.0523e+16-8.18774e+17-9.04305e-06-1.25062e-05
+  -3.35466e-05-5.11862e-05-9.04305e-06 5.41002e-06-2.64186e-06
+   3.87765e-05  5.9166e-05-1.25062e-05-2.64186e-06 6.60753e-06 ]
+%MSG
+Begin processing the 12001st record. Run 316701, Event 441588843, LumiSection 306 on stream 0 at 16-Jan-2022 17:11:29.554 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:11:52 EST Run: 316701 Event: 441033843
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -6.33268e+15-7.51561e+15 5.82793e+14 3.68744e-05-3.10404e-05
+  -7.51561e+15-6.46926e+15 6.20263e+14  3.1831e-05-2.67765e-05
+   5.82793e+14 6.20263e+14-1.33831e+15-1.57776e-05 1.12278e-05
+   3.68744e-05  3.1831e-05-1.57776e-05 9.48944e-05-6.79634e-05
+  -3.10404e-05-2.67765e-05 1.12278e-05-6.79634e-05 5.71065e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:12:21 EST Run: 316701 Event: 441495576
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -4.25566e+10 4.66202e+09 5.84354e+08  0.00119537  0.00514045
+   4.66202e+09-5.10718e+08-6.40152e+07-0.000130951-0.000563129
+   5.84354e+08-6.40152e+07 1.72657e+07 3.43033e-05-5.08045e-05
+    0.00119537-0.000130951 3.43033e-05 7.66977e-07  2.7837e-07
+    0.00514045-0.000563129-5.08045e-05  2.7837e-07 1.49169e-06 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:12:24 EST Run: 316701 Event: 441560662
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -4.48269e+16 8.35118e+16-9.02625e+13 3.41923e-06 8.52502e-05
+   8.35118e+16-1.21651e+17 1.01468e+14-4.98386e-06-0.000124183
+  -9.02625e+13 1.01468e+14-9.46878e+12-3.80528e-06 -6.1896e-08
+   3.41923e-06-4.98386e-06-3.80528e-06 1.30791e-05 5.18389e-07
+   8.52502e-05-0.000124183 -6.1896e-08 5.18389e-07 1.56518e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:12:24 EST Run: 316701 Event: 441560662
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -6.69776e+15 3.63485e+16-3.08624e+13 2.15832e-05 2.33009e-05
+   3.63485e+16 -6.0524e+16 5.13888e+13-3.59383e-05-3.87985e-05
+  -3.08624e+13 5.13888e+13-9.10942e+12-2.66882e-06-2.16542e-06
+   2.15832e-05-3.59383e-05-2.66882e-06 9.29663e-06 7.54789e-06
+   2.33009e-05-3.87985e-05-2.16542e-06 7.54789e-06 8.43994e-06 ]
+%MSG
+Begin processing the 13001st record. Run 316701, Event 440428652, LumiSection 306 on stream 0 at 16-Jan-2022 17:13:17.928 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:14:02 EST Run: 316701 Event: 440546798
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -6.24067e+16-2.02553e+15-5.26982e+15 2.47304e-05 -7.0138e-05
+  -2.02553e+15-3.97646e+13 1.28166e+14 1.55214e-06-3.51127e-06
+  -5.26982e+15 1.28166e+14 2.14143e+16-1.00787e-05 2.23279e-05
+   2.47304e-05 1.55214e-06-1.00787e-05 3.33626e-05-6.60787e-05
+   -7.0138e-05-3.51127e-06 2.23279e-05-6.60787e-05  0.00013668 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:14:48 EST Run: 316701 Event: 440830077
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.20382e+17-1.08033e+15-4.80563e+15  -0.0473269   0.0063259
+  -1.08033e+15 2.05301e+13  6.1592e+13  0.00013859-1.85175e-05
+  -4.80563e+15  6.1592e+13-2.53067e+14  0.00172226-0.000230834
+    -0.0473269  0.00013859  0.00172226 -0.00226957  0.00030474
+     0.0063259-1.85175e-05-0.000230834  0.00030474-4.01665e-05 ]
+%MSG
+Begin processing the 14001st record. Run 316701, Event 441019285, LumiSection 306 on stream 0 at 16-Jan-2022 17:15:01.194 EST
+Begin processing the 15001st record. Run 316701, Event 440895260, LumiSection 306 on stream 0 at 16-Jan-2022 17:16:42.124 EST
+Begin processing the 16001st record. Run 316701, Event 440706421, LumiSection 306 on stream 0 at 16-Jan-2022 17:18:24.469 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:18:43 EST Run: 316701 Event: 441321029
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -4.44443e+17 6.52728e+17-2.93561e+18  0.00126817  0.00134882
+   6.52728e+17-9.58516e+17 4.31086e+18 -0.00186227 -0.00198071
+  -2.93561e+18 4.31086e+18 -3.0413e+19   0.0100289   0.0107455
+    0.00126817 -0.00186227   0.0100289 0.000179176 0.000172468
+    0.00134882 -0.00198071   0.0107455 0.000172468 0.000170948 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:19:48 EST Run: 316701 Event: 553764581
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -7.07979e+13 1.50418e+13-6.53397e+13    -1.55704     1.03906
+   1.50418e+13-1.48862e+12 1.06333e+13    0.184023   -0.122804
+  -6.53397e+13 1.06333e+13-2.79007e+13    -1.07384    0.716607
+      -1.55704    0.184023    -1.07384     6.08393    -4.05992
+       1.03906   -0.122804    0.716607    -4.05992     2.70926 ]
+%MSG
+Begin processing the 17001st record. Run 316701, Event 554675118, LumiSection 384 on stream 0 at 16-Jan-2022 17:20:05.809 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:21:39 EST Run: 316701 Event: 553900808
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.15582e+13 2.04286e+13 1.50819e+09-2.02738e-06 4.68148e-05
+   2.04286e+13-2.97612e+13 -4.8706e+09   2.953e-06-6.82015e-05
+   1.50819e+09 -4.8706e+09 1.54803e+09-2.43762e-06 2.99391e-07
+  -2.02738e-06   2.953e-06-2.43762e-06 9.48469e-06-1.15917e-06
+   4.68148e-05-6.82015e-05 2.99391e-07-1.15917e-06 1.27021e-05 ]
+%MSG
+Begin processing the 18001st record. Run 316701, Event 553858888, LumiSection 384 on stream 0 at 16-Jan-2022 17:21:47.902 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:22:44 EST Run: 316701 Event: 554113309
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -7.29473e+15 2.65128e+14-1.32311e+15   0.0172106 -0.00198984
+   2.65128e+14 8.94839e+13  1.8208e+13-0.000370137 4.24517e-05
+  -1.32311e+15  1.8208e+13-2.92626e+13  0.00239796-0.000277114
+     0.0172106-0.000370137  0.00239796  0.00717441-0.000828272
+   -0.00198984 4.24517e-05-0.000277114-0.000828272 9.70185e-05 ]
+%MSG
+Begin processing the 19001st record. Run 316701, Event 553383224, LumiSection 384 on stream 0 at 16-Jan-2022 17:23:31.630 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:24:01 EST Run: 316701 Event: 554689266
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -7.70619e+16 -3.9263e+15-1.37185e+16   -0.360757   -0.246796
+   -3.9263e+15 -1.9532e+14-6.74594e+14  -0.0173668  -0.0118808
+  -1.37185e+16-6.74594e+14-1.61532e+15  -0.0562489  -0.0384819
+     -0.360757  -0.0173668  -0.0562489   0.0179779   0.0122873
+     -0.246796  -0.0118808  -0.0384819   0.0122873  0.00840122 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:24:02 EST Run: 316701 Event: 553835059
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -4.2646e+13-2.07258e+13 -9.1441e+11  0.00981008  0.00399634
+  -2.07258e+13-1.00467e+13-1.78263e+11   0.0047529  0.00193619
+   -9.1441e+11-1.78263e+11 3.46783e+13  -0.0216519 -0.00881653
+    0.00981008   0.0047529  -0.0216519   0.0885581   0.0360701
+    0.00399634  0.00193619 -0.00881653   0.0360701   0.0146989 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:24:16 EST Run: 316701 Event: 553511298
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -2.9823e+14 1.73182e+14 5.09675e+13 9.62854e-05-0.000206718
+   1.73182e+14-5.53302e+13 -1.0616e+13-3.05921e-05 6.56498e-05
+   5.09675e+13 -1.0616e+13 4.89278e+12-1.45743e-05 3.15091e-05
+   9.62854e-05-3.05921e-05-1.45743e-05 5.86974e-05-0.000124612
+  -0.000206718 6.56498e-05 3.15091e-05-0.000124612 0.000266717 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:24:42 EST Run: 316701 Event: 554753981
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -3.09221e+14-5.55191e+13-3.85615e+14-0.000741105 0.000111768
+  -5.55191e+13 4.05972e+12-2.52259e+13 0.000149702-2.39434e-05
+  -3.85615e+14-2.52259e+13-1.27175e+14 -0.00052133  7.9058e-05
+  -0.000741105 0.000149702 -0.00052133   0.0330726 -0.00519498
+   0.000111768-2.39434e-05  7.9058e-05 -0.00519498 0.000816979 ]
+%MSG
+Begin processing the 20001st record. Run 316701, Event 554627787, LumiSection 384 on stream 0 at 16-Jan-2022 17:25:13.093 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:25:34 EST Run: 316701 Event: 554296466
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.33136e+16-9.43052e+14 2.44796e+14   0.0591146   -0.583709
+  -9.43052e+14-3.03271e+13 6.84279e+13  0.00386395  -0.0381505
+   2.44796e+14 6.84279e+13 1.32658e+15 -0.00603816   0.0596213
+     0.0591146  0.00386395 -0.00603816  0.00847003  -0.0835595
+     -0.583709  -0.0381505   0.0596213  -0.0835595    0.824893 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:25:50 EST Run: 316701 Event: 553789954
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.03157e+17  8.9324e+16 2.27879e+14 6.83571e-05 0.000206262
+    8.9324e+16-7.49933e+16-2.00507e+14-5.73912e-05-0.000173171
+   2.27879e+14-2.00507e+14-8.86718e+11-5.93001e-06-1.35887e-06
+   6.83571e-05-5.73912e-05-5.93001e-06 2.01885e-05   3.297e-06
+   0.000206262-0.000173171-1.35887e-06   3.297e-06 2.57536e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:26:33 EST Run: 316701 Event: 554758174
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -5.78719e+10 2.35384e+12 1.80772e+13  0.00377861   0.0753309
+   2.35384e+12 5.00543e+12  2.9759e+13    0.002846   0.0567447
+   1.80772e+13  2.9759e+13 1.52089e+14  0.00423076    0.084159
+    0.00377861    0.002846  0.00423076  0.00671831      0.1115
+     0.0753309   0.0567447    0.084159      0.1115     2.26169 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:26:41 EST Run: 316701 Event: 553968614
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -3.42356e+16 2.47646e+16 6.15146e+16 1.59507e-06-0.000339193
+   2.47646e+16-1.76122e+16-4.37513e+16-1.13438e-06 0.000241227
+   6.15146e+16-4.37513e+16-8.28701e+16-2.85229e-06 0.000665521
+   1.59507e-06-1.13438e-06-2.85229e-06  1.2391e-05-1.44451e-05
+  -0.000339193 0.000241227 0.000665521-1.44451e-05  0.00601603 ]
+%MSG
+Begin processing the 21001st record. Run 316701, Event 553811706, LumiSection 384 on stream 0 at 16-Jan-2022 17:26:55.371 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:27:38 EST Run: 316701 Event: 554801237
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.19647e+15-8.56667e+15-3.98855e+16 1.54142e-06-4.02589e-06
+  -8.56667e+15-3.19395e+16-1.48707e+17 5.74692e-06-1.50099e-05
+  -3.98855e+16-1.48707e+17-1.06005e+18 3.21054e-05-7.62745e-05
+   1.54142e-06 5.74692e-06 3.21054e-05 1.04493e-05-2.00559e-05
+  -4.02589e-06-1.50099e-05-7.62745e-05-2.00559e-05 4.14242e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:28:24 EST Run: 316701 Event: 571433503
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -8.03966e+13 4.30657e+13-3.08931e+15-7.77556e-07 1.89477e-07
+   4.30657e+13-4.56486e+10 3.38041e+13-9.06297e-08-3.59428e-08
+  -3.08931e+15 3.38041e+13-2.54856e+15-8.46087e-07 1.93955e-07
+  -7.77556e-07-9.06297e-08-8.46087e-07 5.91318e-06-9.36659e-07
+   1.89477e-07-3.59428e-08 1.93955e-07-9.36659e-07 1.04973e-06 ]
+%MSG
+Begin processing the 22001st record. Run 316701, Event 571679401, LumiSection 397 on stream 0 at 16-Jan-2022 17:28:37.088 EST
+Begin processing the 23001st record. Run 316701, Event 572428225, LumiSection 397 on stream 0 at 16-Jan-2022 17:30:17.079 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:30:33 EST Run: 316701 Event: 572241868
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.31283e+17-7.09447e+17-1.76885e+14 -1.0817e-05-0.000438732
+  -7.09447e+17-1.75545e+18-2.31585e+14-2.67454e-05 -0.00108559
+  -1.76885e+14-2.31585e+14  2.1706e+13-2.81669e-06-4.70311e-08
+   -1.0817e-05-2.67454e-05-2.81669e-06 9.06747e-06 8.74315e-07
+  -0.000438732 -0.00108559-4.70311e-08 8.74315e-07 4.13842e-05 ]
+%MSG
+Begin processing the 24001st record. Run 316701, Event 571529168, LumiSection 397 on stream 0 at 16-Jan-2022 17:31:57.252 EST
+Begin processing the 25001st record. Run 316701, Event 571991175, LumiSection 397 on stream 0 at 16-Jan-2022 17:33:37.358 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:33:41 EST Run: 316701 Event: 572572785
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.26227e+14 2.67175e+13 -2.2805e+14-0.000940228-0.000317809
+   2.67175e+13 1.00174e+10 1.57591e+13 8.17063e-05   2.761e-05
+   -2.2805e+14 1.57591e+13-1.45138e+13 -0.00029397-9.96989e-05
+  -0.000940228 8.17063e-05 -0.00029397 0.000187643  6.3585e-05
+  -0.000317809   2.761e-05-9.96989e-05  6.3585e-05 2.21552e-05 ]
+%MSG
+Begin processing the 26001st record. Run 316701, Event 571497612, LumiSection 397 on stream 0 at 16-Jan-2022 17:35:20.289 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:35:53 EST Run: 316701 Event: 572118039
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -4.67999e+16 2.43112e+14 1.60449e+16-1.51921e-05 4.04557e-06
+   2.43112e+14  3.2652e+13-2.73635e+13-6.05654e-07-5.48807e-07
+   1.60449e+16-2.73635e+13-6.77016e+14 3.75512e-06 8.34025e-07
+  -1.51921e-05-6.05654e-07 3.75512e-06 1.29879e-05 7.91943e-06
+   4.04557e-06-5.48807e-07 8.34025e-07 7.91943e-06 6.58352e-06 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:35:57 EST Run: 316701 Event: 571693301
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -8.1854e+16 1.35495e+16-5.76309e+15  -0.0027062 -0.00708401
+   1.35495e+16-1.49246e+15 5.87531e+14 0.000315145 0.000824679
+  -5.76309e+15 5.87531e+14 8.01616e+14-9.19634e-05-0.000240429
+    -0.0027062 0.000315145-9.19634e-05 0.000309459 0.000840052
+   -0.00708401 0.000824679-0.000240429 0.000840052  0.00229651 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:36:08 EST Run: 316701 Event: 571841672
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -9.24574e+14-3.27227e+14-4.79403e+15 -0.00360414  -0.0176627
+  -3.27227e+14-9.57932e+13-1.45779e+15-0.000955839 -0.00466884
+  -4.79403e+15-1.45779e+15-2.02983e+16   -0.013602   -0.066461
+   -0.00360414-0.000955839   -0.013602   0.0040694   0.0204023
+    -0.0176627 -0.00466884   -0.066461   0.0204023    0.102256 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:36:09 EST Run: 316701 Event: 572152134
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.25486e+16 -4.7908e+16 4.88875e+13 1.12127e-05-0.000124224
+   -4.7908e+16 -6.6321e+16 6.76784e+13 1.55222e-05-0.000171968
+   4.88875e+13 6.76784e+13 1.26404e+13-5.35535e-06 9.57207e-07
+   1.12127e-05 1.55222e-05-5.35535e-06 1.52971e-05-1.95041e-06
+  -0.000124224-0.000171968 9.57207e-07-1.95041e-06 3.21892e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:36:31 EST Run: 316701 Event: 578562638
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -9.80245e+15 1.37892e+15 2.02887e+15   0.0130856 -0.00156736
+   1.37892e+15-1.89879e+14-2.72562e+14 -0.00176775 0.000211755
+   2.02887e+15-2.72562e+14-5.39259e+14 -0.00418908 0.000501201
+     0.0130856 -0.00176775 -0.00418908   0.0129737 -0.00155011
+   -0.00156736 0.000211755 0.000501201 -0.00155011 0.000185677 ]
+%MSG
+Begin processing the 27001st record. Run 316701, Event 578688822, LumiSection 401 on stream 0 at 16-Jan-2022 17:37:04.388 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:37:45 EST Run: 316701 Event: 577879974
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.58192e+15  1.5693e+14-3.96142e+14 0.000481877 0.000592236
+    1.5693e+14 1.58378e+13-4.10481e+12-1.16649e-05-1.41679e-05
+  -3.96142e+14-4.10481e+12 6.47768e+14-5.63507e-05-6.76878e-05
+   0.000481877-1.16649e-05-5.63507e-05 0.000238898 0.000281946
+   0.000592236-1.41679e-05-6.76878e-05 0.000281946 0.000335408 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:38:29 EST Run: 316701 Event: 577914146
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -5.40511e+14 4.51847e+12-2.18277e+14  0.00146688  -0.0010125
+   4.51847e+12 1.62606e+12 1.55658e+12-2.34557e-05 1.61688e-05
+  -2.18277e+14 1.55658e+12-8.41612e+12 0.000371058-0.000256087
+    0.00146688-2.34557e-05 0.000371058  0.00189935 -0.00130756
+    -0.0010125 1.61688e-05-0.000256087 -0.00130756 0.000900713 ]
+%MSG
+Begin processing the 28001st record. Run 316701, Event 577506861, LumiSection 401 on stream 0 at 16-Jan-2022 17:38:50.363 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:39:03 EST Run: 316701 Event: 577956464
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.51172e+12 1.06869e+13  8.6959e+10  0.00232362  0.00132851
+   1.06869e+13-6.97251e+12-7.90588e+12 -0.00137873-0.000788273
+    8.6959e+10-7.90588e+12-4.07864e+13 -0.00348661 -0.00199274
+    0.00232362 -0.00137873 -0.00348661  0.00870629  0.00497701
+    0.00132851-0.000788273 -0.00199274  0.00497701  0.00284648 ]
+%MSG
+Begin processing the 29001st record. Run 316701, Event 578253388, LumiSection 401 on stream 0 at 16-Jan-2022 17:40:30.234 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:40:51 EST Run: 316701 Event: 579031104
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.59931e+14  2.3486e+12-7.36275e+13-1.41455e-05-8.89548e-07
+    2.3486e+12 3.20251e+12 3.72013e+11-1.41466e-08 2.07824e-08
+  -7.36275e+13 3.72013e+11 2.47381e+13-4.43702e-06 -6.4559e-08
+  -1.41455e-05-1.41466e-08-4.43702e-06 1.89511e-05-3.25207e-06
+  -8.89548e-07 2.07824e-08 -6.4559e-08-3.25207e-06 1.23213e-06 ]
+%MSG
+Begin processing the 30001st record. Run 316701, Event 577777344, LumiSection 401 on stream 0 at 16-Jan-2022 17:42:11.431 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:42:15 EST Run: 316701 Event: 577703977
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -4.69588e+13 -3.5471e+13-4.02688e+14   0.0437642 -0.00415275
+   -3.5471e+13 3.66169e+13-2.02043e+13  0.00144061-0.000136734
+  -4.02688e+14-2.02043e+13-5.32351e+13   0.0422285 -0.00400781
+     0.0437642  0.00144061   0.0422285    0.452368  -0.0429888
+   -0.00415275-0.000136734 -0.00400781  -0.0429888  0.00412127 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:42:40 EST Run: 316701 Event: 577568093
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.64224e+14 9.71399e+12 9.97248e+13 0.000288783  0.00405944
+   9.71399e+12 6.43615e+12-5.80708e+12-1.09059e-05-0.000154553
+   9.97248e+13-5.80708e+12 3.14089e+13-0.000152541  -0.0021409
+   0.000288783-1.09059e-05-0.000152541 7.89323e-06 6.94973e-05
+    0.00405944-0.000154553  -0.0021409 6.94973e-05  0.00100484 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:43:37 EST Run: 316701 Event: 577878114
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -9.38604e+14-9.91812e+13-1.39177e+14  0.00763691    0.438334
+  -9.91812e+13-2.21586e+12-4.12739e+13 0.000983931   0.0564374
+  -1.39177e+14-4.12739e+13 4.40128e+13 -0.00019109  -0.0112024
+    0.00763691 0.000983931 -0.00019109 0.000303667   0.0149154
+      0.438334   0.0564374  -0.0112024   0.0149154    0.847054 ]
+%MSG
+Begin processing the 31001st record. Run 316701, Event 578283540, LumiSection 401 on stream 0 at 16-Jan-2022 17:43:50.613 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:44:05 EST Run: 316701 Event: 578818606
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -8.52916e+14 4.53072e+14-2.57358e+14 2.28095e-05  3.9196e-05
+   4.53072e+14-2.30484e+14 1.17912e+14-1.16049e-05-1.99412e-05
+  -2.57358e+14 1.17912e+14   3.037e+15-1.11535e-05 -1.7958e-05
+   2.28095e-05-1.16049e-05-1.11535e-05 4.90343e-05 8.14592e-05
+    3.9196e-05-1.99412e-05 -1.7958e-05 8.14592e-05  0.00014087 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:44:40 EST Run: 316701 Event: 578933657
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -8.28531e+13 8.20659e+12  1.7996e+14 -0.00102764-8.62261e-05
+   8.20659e+12-5.54147e+13-9.18675e+12 3.71756e-05 2.79358e-06
+    1.7996e+14-9.18675e+12-3.11292e+13  0.00050183  4.3062e-05
+   -0.00102764 3.71756e-05  0.00050183  0.00596522 0.000598362
+  -8.62261e-05 2.79358e-06  4.3062e-05 0.000598362 6.27672e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:45:22 EST Run: 316701 Event: 579477485
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.97537e+14-1.59363e+14-6.12668e+15   -0.546252   -0.935249
+  -1.59363e+14  1.8685e+13  1.8822e+14   0.0176196   0.0301668
+  -6.12668e+15  1.8822e+14-2.75018e+15   -0.256716   -0.439531
+     -0.546252   0.0176196   -0.256716   0.0450872    0.077197
+     -0.935249   0.0301668   -0.439531    0.077197    0.132177 ]
+%MSG
+Begin processing the 32001st record. Run 316701, Event 579709966, LumiSection 402 on stream 0 at 16-Jan-2022 17:45:32.966 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:45:42 EST Run: 316701 Event: 579259139
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -5.8347e+15 1.72881e+14 7.97325e+14 -0.00928465 -0.00714937
+   1.72881e+14 2.38798e+13 1.11169e+13 -0.00359288 -0.00292309
+   7.97325e+14 1.11169e+13 1.84337e+13 -0.00408321 -0.00336519
+   -0.00928465 -0.00359288 -0.00408321   0.0238039   0.0193946
+   -0.00714937 -0.00292309 -0.00336519   0.0193946   0.0158194 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:46:01 EST Run: 316701 Event: 579182719
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.44126e+12-2.21248e+12-6.74551e+11 0.000208132  0.00135501
+  -2.21248e+12 3.72181e+11-7.61456e+11  0.00013278 0.000865143
+  -6.74551e+11-7.61456e+11 3.47777e+11 6.47656e-05 0.000421767
+   0.000208132  0.00013278 6.47656e-05   0.0002191  0.00131292
+    0.00135501 0.000865143 0.000421767  0.00131292  0.00821542 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:46:34 EST Run: 316701 Event: 580601932
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.29187e+17-1.99793e+15 5.08295e+16 -0.00781937    0.018387
+  -1.99793e+15-2.86253e+13 8.27577e+14-0.000123543 0.000290395
+   5.08295e+16 8.27577e+14-1.65499e+16  0.00299833   -0.007048
+   -0.00781937-0.000123543  0.00299833  0.00188067 -0.00434629
+      0.018387 0.000290395   -0.007048 -0.00434629    0.010185 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:46:50 EST Run: 316701 Event: 580338613
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -8.37183e+14-1.81387e+14 1.21851e+15 0.000534456 6.99491e-05
+  -1.81387e+14 3.86983e+13 6.97613e+12 3.87953e-07  1.0503e-08
+   1.21851e+15 6.97613e+12 6.02108e+14 -0.00016745 -2.1589e-05
+   0.000534456 3.87953e-07 -0.00016745 0.000219365 3.23235e-05
+   6.99491e-05  1.0503e-08 -2.1589e-05 3.23235e-05  5.6381e-06 ]
+%MSG
+Begin processing the 33001st record. Run 316701, Event 579519910, LumiSection 402 on stream 0 at 16-Jan-2022 17:47:16.487 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:47:39 EST Run: 316701 Event: 579564957
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -3.28632e+12-1.71834e+13  2.0169e+13 -0.00992138   -0.011242
+  -1.71834e+13-7.10466e+10 -3.9276e+12-0.000591261-0.000669963
+    2.0169e+13 -3.9276e+12 3.08755e+13 0.000630821 0.000714652
+   -0.00992138-0.000591261 0.000630821  0.00370138  0.00419403
+     -0.011242-0.000669963 0.000714652  0.00419403  0.00475304 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:47:57 EST Run: 316701 Event: 580518686
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -8.99434e+13-6.02806e+13 1.53187e+14 8.28994e-05 -6.1271e-05
+  -6.02806e+13-2.88834e+13 7.67428e+13 3.89866e-05-2.88153e-05
+   1.53187e+14 7.67428e+13-3.00795e+14-0.000200024 0.000148482
+   8.28994e-05 3.89866e-05-0.000200024 0.000303403-0.000224088
+   -6.1271e-05-2.88153e-05 0.000148482-0.000224088 0.000167378 ]
+%MSG
+Begin processing the 34001st record. Run 316701, Event 580472370, LumiSection 402 on stream 0 at 16-Jan-2022 17:48:58.936 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:49:44 EST Run: 316701 Event: 579183720
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.09947e+15-1.13982e+16-1.45316e+13-0.000102653-0.000629517
+  -1.13982e+16-2.86963e+16-2.39456e+13-0.000258434 -0.00158486
+  -1.45316e+13-2.39456e+13-4.05328e+14-1.58158e-05-4.32218e-05
+  -0.000102653-0.000258434-1.58158e-05 4.28289e-05 0.000126147
+  -0.000629517 -0.00158486-4.32218e-05 0.000126147 0.000775128 ]
+%MSG
+Begin processing the 35001st record. Run 316701, Event 580031752, LumiSection 402 on stream 0 at 16-Jan-2022 17:50:38.881 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:51:24 EST Run: 316701 Event: 580347776
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.43893e+19 2.11845e+16 3.18863e+17     11629.9     12618.3
+   2.11845e+16 -1.8398e+13-2.79919e+14    -10.2145    -11.0827
+   3.18863e+17-2.79919e+14-1.31719e+15    -37.8922    -41.1126
+       11629.9    -10.2145    -37.8922     3.51823     3.81691
+       12618.3    -11.0827    -41.1126     3.81691     4.14134 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:52:01 EST Run: 316701 Event: 579735178
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.19857e+14 7.88085e+13 1.23008e+14  -0.0011697 0.000209954
+   7.88085e+13 2.69073e+13 2.78935e+12-2.73575e-06 6.87388e-07
+   1.23008e+14 2.78935e+12 4.76213e+13 5.23661e-05-9.52785e-06
+    -0.0011697-2.73575e-06 5.23661e-05 0.000459513-8.21315e-05
+   0.000209954 6.87388e-07-9.52785e-06-8.21315e-05  1.6359e-05 ]
+%MSG
+Begin processing the 36001st record. Run 316701, Event 579703134, LumiSection 402 on stream 0 at 16-Jan-2022 17:52:18.730 EST
+Begin processing the 37001st record. Run 316701, Event 579569970, LumiSection 402 on stream 0 at 16-Jan-2022 17:54:00.154 EST
+Begin processing the 38001st record. Run 316701, Event 594406768, LumiSection 411 on stream 0 at 16-Jan-2022 17:55:40.285 EST
+Begin processing the 39001st record. Run 316701, Event 593440421, LumiSection 411 on stream 0 at 16-Jan-2022 17:57:22.096 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:59:00 EST Run: 316701 Event: 593761385
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -5.79469e+16-2.25689e+17-4.58279e+13 1.20288e-06-1.63662e-05
+  -2.25689e+17-4.90691e+17-9.96465e+13  2.6153e-06-3.55834e-05
+  -4.58279e+13-9.96465e+13 2.83269e+14-5.16665e-07-6.75248e-07
+   1.20288e-06  2.6153e-06-5.16665e-07 2.18989e-06-1.27524e-06
+  -1.63662e-05-3.55834e-05-6.75248e-07-1.27524e-06 1.47766e-05 ]
+%MSG
+Begin processing the 40001st record. Run 316701, Event 593405728, LumiSection 411 on stream 0 at 16-Jan-2022 17:59:03.160 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 17:59:58 EST Run: 316701 Event: 593843035
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -5.12625e+13 1.81864e+12-8.83471e+13 0.000524575 0.000188545
+   1.81864e+12   8.854e+12-4.89209e+12 2.39505e-06  1.1277e-06
+  -8.83471e+13-4.89209e+12-7.00562e+13 0.000308779 0.000114037
+   0.000524575 2.39505e-06 0.000308779    0.167424   0.0582777
+   0.000188545  1.1277e-06 0.000114037   0.0582777   0.0202682 ]
+%MSG
+Begin processing the 41001st record. Run 316701, Event 593362199, LumiSection 411 on stream 0 at 16-Jan-2022 18:00:46.132 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:00:53 EST Run: 316701 Event: 593632727
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.21144e+14-7.34974e+13 3.94425e+14 -0.00129724  0.00227831
+  -7.34974e+13-3.36565e+13 1.64034e+14-0.000419515 0.000736193
+   3.94425e+14 1.64034e+14-5.67736e+14 0.000325506-0.000557163
+   -0.00129724-0.000419515 0.000325506  0.00103493 -0.00182016
+    0.00227831 0.000736193-0.000557163 -0.00182016  0.00318458 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:01:12 EST Run: 316701 Event: 593505880
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.87131e+15 4.97629e+14-4.73601e+13   -0.380457     16.2267
+   4.97629e+14-8.05477e+13-4.93257e+12   0.0637813    -2.72034
+  -4.73601e+13-4.93257e+12-1.24731e+13 -0.00564722    0.240583
+     -0.380457   0.0637813 -0.00564722  0.00654334   -0.277781
+       16.2267    -2.72034    0.240583   -0.277781     11.8505 ]
+%MSG
+Begin processing the 42001st record. Run 316701, Event 593144476, LumiSection 411 on stream 0 at 16-Jan-2022 18:02:24.505 EST
+Begin processing the 43001st record. Run 316701, Event 594983455, LumiSection 412 on stream 0 at 16-Jan-2022 18:04:05.237 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:05:29 EST Run: 316701 Event: 594894823
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -3.14408e+15 4.08655e+14-1.09684e+16  0.00701575 -0.00073464
+   4.08655e+14   5.675e+12 2.39839e+14-0.000505443 4.68503e-05
+  -1.09684e+16 2.39839e+14-5.15402e+15  0.00470084-0.000483007
+    0.00701575-0.000505443  0.00470084    0.030971 -0.00286801
+   -0.00073464 4.68503e-05-0.000483007 -0.00286801 0.000303012 ]
+%MSG
+Begin processing the 44001st record. Run 316701, Event 595865394, LumiSection 412 on stream 0 at 16-Jan-2022 18:05:44.398 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:06:13 EST Run: 316701 Event: 595546079
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.95408e+16-1.28823e+15 5.44238e+15  0.00028462-0.000124748
+  -1.28823e+15 -4.6751e+13 2.87354e+14 1.23898e-05-5.54186e-06
+   5.44238e+15 2.87354e+14-1.01223e+15-6.20947e-05 2.86015e-05
+    0.00028462 1.23898e-05-6.20947e-05-1.76123e-05 1.13797e-05
+  -0.000124748-5.54186e-06 2.86015e-05 1.13797e-05-8.80594e-06 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:06:54 EST Run: 316701 Event: 595062489
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.64964e+16-2.02115e+14   7.975e+14     20.9738    -95.9065
+  -2.02115e+14 1.60721e+13  3.0105e+12    0.473231    -2.16393
+     7.975e+14  3.0105e+12-9.46147e+12    -1.21952     5.57648
+       20.9738    0.473231    -1.21952     2.78765     -12.747
+      -95.9065    -2.16393     5.57648     -12.747      58.288 ]
+%MSG
+Begin processing the 45001st record. Run 316701, Event 595724652, LumiSection 412 on stream 0 at 16-Jan-2022 18:07:24.938 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:07:36 EST Run: 316701 Event: 595038138
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.05676e+16-1.27496e+14 1.06688e+16    0.175804   -0.731542
+  -1.27496e+14 2.96366e+13 -1.7867e+14 -0.00283589   0.0117991
+   1.06688e+16 -1.7867e+14-4.36494e+15  -0.0829868    0.345325
+      0.175804 -0.00283589  -0.0829868    0.014319  -0.0598378
+     -0.731542   0.0117991    0.345325  -0.0598378    0.250501 ]
+%MSG
+Begin processing the 46001st record. Run 316701, Event 595178298, LumiSection 412 on stream 0 at 16-Jan-2022 18:09:07.362 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:09:24 EST Run: 316701 Event: 595931239
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.33683e+16 2.11135e+15 1.11532e+16    -1.14961    0.905138
+   2.11135e+15-1.85426e+14-9.44479e+14   0.0973886  -0.0766783
+   1.11532e+16-9.44479e+14-3.06266e+15    0.347606   -0.273685
+      -1.14961   0.0973886    0.347606   0.0670195  -0.0527679
+      0.905138  -0.0766783   -0.273685  -0.0527679    0.041548 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:10:38 EST Run: 316701 Event: 594668663
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -5.65657e+13 2.40949e+12-3.18455e+14  0.00214104  0.00601319
+   2.40949e+12 7.25995e+11 4.23991e+13-0.000290055-0.000814601
+  -3.18455e+14 4.23991e+13-2.09278e+14  0.00219825  0.00617786
+    0.00214104-0.000290055  0.00219825 0.000561789   0.0015766
+    0.00601319-0.000814601  0.00617786   0.0015766  0.00444551 ]
+%MSG
+Begin processing the 47001st record. Run 316701, Event 594922132, LumiSection 412 on stream 0 at 16-Jan-2022 18:10:47.929 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:11:40 EST Run: 316701 Event: 654355886
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.43277e+17 7.80193e+15 5.75445e+15   0.0328863   -0.105794
+   7.80193e+15-2.30987e+14-1.65854e+14-0.000996926  0.00320732
+   5.75445e+15-1.65854e+14-1.19512e+14-0.000888035  0.00285527
+     0.0328863-0.000996926-0.000888035 0.000384229 -0.00122908
+     -0.105794  0.00320732  0.00285527 -0.00122908  0.00394358 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:11:41 EST Run: 316701 Event: 654073641
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -5.77807e+13 -2.7772e+13-2.41389e+14    0.179934  -0.0191839
+   -2.7772e+13-1.28157e+13-1.11756e+14   0.0820727 -0.00875034
+  -2.41389e+14-1.11756e+14-8.73169e+14    0.672793  -0.0717321
+      0.179934   0.0820727    0.672793     1.14845   -0.122436
+    -0.0191839 -0.00875034  -0.0717321   -0.122436   0.0130568 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:11:50 EST Run: 316701 Event: 654118005
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.00552e+17 1.39665e+16-6.21083e+14 -0.00392154 -0.00395006
+   1.39665e+16-1.93645e+15 8.89455e+13 0.000604379  0.00060878
+  -6.21083e+14 8.89455e+13 1.12977e+14 0.000852342 0.000858641
+   -0.00392154 0.000604379 0.000852342  0.00243276  0.00244692
+   -0.00395006  0.00060878 0.000858641  0.00244692   0.0024649 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:12:30 EST Run: 316701 Event: 653666359
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -4.88708e+17 2.68492e+15-5.48595e+15    -36.8665     137.625
+   2.68492e+15-1.17861e+13 3.37145e+13    0.251689   -0.939569
+  -5.48595e+15 3.37145e+13-3.03072e+13   -0.340754     1.27207
+      -36.8665    0.251689   -0.340754     0.19184   -0.716145
+       137.625   -0.939569     1.27207   -0.716145     2.67327 ]
+%MSG
+Begin processing the 48001st record. Run 316701, Event 654021197, LumiSection 451 on stream 0 at 16-Jan-2022 18:12:31.044 EST
+Begin processing the 49001st record. Run 316701, Event 654209155, LumiSection 451 on stream 0 at 16-Jan-2022 18:14:10.233 EST
+Begin processing the 50001st record. Run 316701, Event 654571007, LumiSection 451 on stream 0 at 16-Jan-2022 18:15:48.637 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:16:00 EST Run: 316701 Event: 653860205
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -1.1713e+14 1.09306e+13-5.55674e+14 -0.00267107 0.000245464
+   1.09306e+13 4.14295e+12-9.57343e+11 0.000206752-1.89568e-05
+  -5.55674e+14-9.57343e+11-8.00089e+13 -0.00198726  0.00018289
+   -0.00267107 0.000206752 -0.00198726   0.0256517 -0.00234071
+   0.000245464-1.89568e-05  0.00018289 -0.00234071 0.000213881 ]
+%MSG
+Begin processing the 51001st record. Run 316701, Event 654844153, LumiSection 451 on stream 0 at 16-Jan-2022 18:17:28.579 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:18:12 EST Run: 316701 Event: 655026092
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -5.85253e+13 8.80956e+10-6.23464e+13  -0.0125986  0.00179493
+   8.80956e+10 1.15811e+13-4.66941e+11 5.49106e-05-2.96919e-05
+  -6.23464e+13-4.66941e+11-2.91687e+12 -0.00324489 0.000463137
+    -0.0125986 5.49106e-05 -0.00324489   0.0185688 -0.00265434
+    0.00179493-2.96919e-05 0.000463137 -0.00265434 0.000607022 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:18:25 EST Run: 316701 Event: 654135399
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -6.53637e+16 7.78108e+13 1.39478e+16 -0.00591169 0.000704733
+   7.78108e+13 1.55934e+13-8.15489e+12 0.000148551-1.72417e-05
+   1.39478e+16-8.15489e+12-2.42065e+15 0.000284561-3.55658e-05
+   -0.00591169 0.000148551 0.000284561  0.00607976-0.000721121
+   0.000704733-1.72417e-05-3.55658e-05-0.000721121 8.91024e-05 ]
+%MSG
+Begin processing the 52001st record. Run 316701, Event 654376250, LumiSection 451 on stream 0 at 16-Jan-2022 18:19:06.402 EST
+Begin processing the 53001st record. Run 316701, Event 659768855, LumiSection 455 on stream 0 at 16-Jan-2022 18:20:48.047 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:20:48 EST Run: 316701 Event: 659977363
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.72465e+15-2.36702e+15-8.03826e+15-7.24346e-07  7.6682e-07
+  -2.36702e+15-3.16993e+15-1.07649e+16-9.70049e-07 1.02693e-06
+  -8.03826e+15-1.07649e+16-2.40683e+16-3.52558e-06 3.79815e-06
+  -7.24346e-07-9.70049e-07-3.52558e-06 2.30068e-05 -2.3276e-05
+    7.6682e-07 1.02693e-06 3.79815e-06 -2.3276e-05 2.86329e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:21:36 EST Run: 316701 Event: 660839899
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -3.90259e+13-1.73338e+12 2.32174e+13-0.000146952 3.84487e-05
+  -1.73338e+12 1.25326e+12 3.48995e+11-2.99451e-06 1.24961e-06
+   2.32174e+13 3.48995e+11 7.00806e+12 6.61274e-05-1.80479e-05
+  -0.000146952-2.99451e-06 6.61274e-05 0.000613272-0.000174898
+   3.84487e-05 1.24961e-06-1.80479e-05-0.000174898 6.27414e-05 ]
+%MSG
+Begin processing the 54001st record. Run 316701, Event 660507416, LumiSection 455 on stream 0 at 16-Jan-2022 18:22:27.413 EST
+Begin processing the 55001st record. Run 316701, Event 660826923, LumiSection 455 on stream 0 at 16-Jan-2022 18:24:10.473 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:24:36 EST Run: 316701 Event: 659620486
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -8.46073e+18-6.12024e+16   8.364e+16    -48.8996     166.666
+  -6.12024e+16-4.42523e+14 6.04968e+14   -0.354288     1.20753
+     8.364e+16 6.04968e+14-8.05321e+14     0.45767     -1.5599
+      -48.8996   -0.354288     0.45767    0.101228    -0.34502
+       166.666     1.20753     -1.5599    -0.34502     1.17595 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:25:32 EST Run: 316701 Event: 660876776
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -7.53873e+17-1.67681e+16-4.51619e+16     189.715     43.7552
+  -1.67681e+16-3.67243e+14 -9.9614e+14     4.13165    0.952907
+  -4.51619e+16 -9.9614e+14-2.91316e+15     12.9199     2.97983
+       189.715     4.13165     12.9199     10.5774     2.43967
+       43.7552    0.952907     2.97983     2.43967    0.562704 ]
+%MSG
+Begin processing the 56001st record. Run 316701, Event 659883248, LumiSection 455 on stream 0 at 16-Jan-2022 18:25:48.823 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:26:32 EST Run: 316701 Event: 659962256
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -5.82614e+14 8.62304e+13 2.07247e+14-7.60601e-05 2.56593e-05
+   8.62304e+13-4.06988e+12-5.17252e+13 1.21448e-05-4.10325e-06
+   2.07247e+14-5.17252e+13 6.76406e+13-1.05369e-05 3.34398e-06
+  -7.60601e-05 1.21448e-05-1.05369e-05 5.95346e-05-1.93134e-05
+   2.56593e-05-4.10325e-06 3.34398e-06-1.93134e-05  6.3496e-06 ]
+%MSG
+Begin processing the 57001st record. Run 316701, Event 659622136, LumiSection 455 on stream 0 at 16-Jan-2022 18:27:29.202 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:27:32 EST Run: 316701 Event: 659981555
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.56562e+15 3.39963e+12 3.88879e+15-0.000625886-0.000201922
+   3.39963e+12 8.19866e+11-3.13471e+12-1.08076e-06-3.31582e-07
+   3.88879e+15-3.13471e+12-9.73711e+14 2.98747e-05 1.33184e-05
+  -0.000625886-1.08076e-06 2.98747e-05 0.000681086 0.000210501
+  -0.000201922-3.31582e-07 1.33184e-05 0.000210501 6.47693e-05 ]
+%MSG
+Begin processing the 58001st record. Run 316701, Event 661839696, LumiSection 456 on stream 0 at 16-Jan-2022 18:29:09.150 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:29:29 EST Run: 316701 Event: 662510833
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.01659e+17 3.71346e+14 -2.8499e+16 -0.00267021 0.000258536
+   3.71346e+14 6.73161e+12 5.15843e+13-1.73096e-05 2.38712e-06
+   -2.8499e+16 5.15843e+13-3.85034e+15-0.000387225 3.78753e-05
+   -0.00267021-1.73096e-05-0.000387225  0.00418296-0.000476789
+   0.000258536 2.38712e-06 3.78753e-05-0.000476789  5.7226e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:29:57 EST Run: 316701 Event: 661550968
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -3.02039e+14-2.34445e+14 2.76159e+15 -0.00114689-0.000848067
+  -2.34445e+14 1.41994e+13 1.15412e+14 -3.4656e-05-2.58786e-05
+   2.76159e+15 1.15412e+14 1.12879e+15 8.02576e-05 5.94448e-05
+   -0.00114689 -3.4656e-05 8.02576e-05 0.000230545 0.000167766
+  -0.000848067-2.58786e-05 5.94448e-05 0.000167766 0.000122873 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:29:57 EST Run: 316701 Event: 661550968
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.20166e+16 -7.7064e+14-9.70294e+14  -0.0129587 -0.00343937
+   -7.7064e+14 7.62335e+12-2.97607e+13-0.000491605-0.000130406
+  -9.70294e+14-2.97607e+13 9.77194e+14 -0.00199907-0.000531206
+    -0.0129587-0.000491605 -0.00199907  0.00713887  0.00189879
+   -0.00343937-0.000130406-0.000531206  0.00189879  0.00050704 ]
+%MSG
+Begin processing the 59001st record. Run 316701, Event 661402407, LumiSection 456 on stream 0 at 16-Jan-2022 18:30:48.443 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:32:04 EST Run: 316701 Event: 662251773
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -1.2216e+18 9.50224e+17 1.51173e+14-5.50733e-05 -0.00176405
+   9.50224e+17-7.38926e+17-1.22318e+14 4.28268e-05  0.00137179
+   1.51173e+14-1.22318e+14 4.76644e+13-2.65802e-07 1.70095e-06
+  -5.50733e-05 4.28268e-05-2.65802e-07 1.41747e-06 1.10114e-05
+   -0.00176405  0.00137179 1.70095e-06 1.10114e-05 0.000357102 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:32:04 EST Run: 316701 Event: 662251773
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -3.37314e+17  3.9409e+17 3.07563e+13 -1.8689e-05-0.000359578
+    3.9409e+17-4.36961e+17-7.20067e+13 2.07216e-05 0.000398693
+   3.07563e+13-7.20067e+13 4.69229e+13-2.75901e-07 8.09809e-07
+   -1.8689e-05 2.07216e-05-2.75901e-07 1.33706e-06 5.13147e-06
+  -0.000359578 0.000398693 8.09809e-07 5.13147e-06 0.000103358 ]
+%MSG
+Begin processing the 60001st record. Run 316701, Event 661118845, LumiSection 456 on stream 0 at 16-Jan-2022 18:32:31.506 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:32:43 EST Run: 316701 Event: 662552620
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.21469e+16-9.34684e+16 -7.2245e+13 2.22167e-05-0.000277011
+  -9.34684e+16-1.64603e+17-7.25877e+13 3.91339e-05-0.000487838
+   -7.2245e+13-7.25877e+13 1.03847e+14-4.73809e-06 2.41346e-06
+   2.22167e-05 3.91339e-05-4.73809e-06 1.50625e-05-1.16212e-05
+  -0.000277011-0.000487838 2.41346e-06-1.16212e-05 0.000134605 ]
+%MSG
+Begin processing the 61001st record. Run 316701, Event 662567348, LumiSection 456 on stream 0 at 16-Jan-2022 18:34:11.263 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:34:17 EST Run: 316701 Event: 662391477
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.11843e+14-1.87093e+13  1.5393e+14    0.202525    0.226534
+  -1.87093e+13 -1.4642e+12 1.42713e+13   0.0208878   0.0233636
+    1.5393e+14 1.42713e+13 -3.4733e+12  -0.0503847  -0.0563747
+      0.202525   0.0208878  -0.0503847    0.174137     0.19473
+      0.226534   0.0233636  -0.0563747     0.19473    0.217793 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:35:05 EST Run: 316701 Event: 661398923
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -5.27684e+13 8.11868e+11 6.36878e+13-4.30796e-06 4.97238e-07
+   8.11868e+11 2.71848e+12-8.75157e+11 1.08006e-08 1.99352e-08
+   6.36878e+13-8.75157e+11-1.84901e+13 3.00505e-06-3.45882e-07
+  -4.30796e-06 1.08006e-08 3.00505e-06 2.20033e-06-2.83793e-07
+   4.97238e-07 1.99352e-08-3.45882e-07-2.83793e-07 3.84055e-07 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:35:44 EST Run: 316701 Event: 661772213
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -4.97961e+13 5.29176e+11 6.59219e+13-0.000369574-3.83877e-05
+   5.29176e+11   2.807e+12 -1.2211e+12 5.63326e-06 4.54016e-07
+   6.59219e+13 -1.2211e+12-1.80655e+13 0.000342285 3.48285e-05
+  -0.000369574 5.63326e-06 0.000342285  0.00111403 0.000220173
+  -3.83877e-05 4.54016e-07 3.48285e-05 0.000220173-4.49881e-07 ]
+%MSG
+Begin processing the 62001st record. Run 316701, Event 661214786, LumiSection 456 on stream 0 at 16-Jan-2022 18:35:52.809 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:36:08 EST Run: 316701 Event: 662089648
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -2.9854e+15 1.55381e+15-1.45526e+15-0.000829439 -0.00228627
+   1.55381e+15-3.74122e+14 3.38319e+14 0.000189215 0.000521803
+  -1.45526e+15 3.38319e+14 1.45117e+14-6.42992e-05-0.000178425
+  -0.000829439 0.000189215-6.42992e-05 0.000487972  0.00134087
+   -0.00228627 0.000521803-0.000178425  0.00134087  0.00369117 ]
+%MSG
+Begin processing the 63001st record. Run 316701, Event 669457682, LumiSection 461 on stream 0 at 16-Jan-2022 18:37:32.203 EST
+Begin processing the 64001st record. Run 316701, Event 669178468, LumiSection 461 on stream 0 at 16-Jan-2022 18:39:10.472 EST
+Begin processing the 65001st record. Run 316701, Event 668671183, LumiSection 461 on stream 0 at 16-Jan-2022 18:40:49.022 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:42:11 EST Run: 316701 Event: 669076079
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -3.7609e+15-1.08159e+14 1.05424e+16  -0.0173961  0.00415303
+  -1.08159e+14 3.47868e+13 5.00056e+13-6.43321e-05 1.82806e-05
+   1.05424e+16 5.00056e+13 2.96205e+14  0.00143329-0.000350449
+    -0.0173961-6.43321e-05  0.00143329  0.00351839 -0.00081285
+    0.00415303 1.82806e-05-0.000350449 -0.00081285 0.000212969 ]
+%MSG
+Begin processing the 66001st record. Run 316701, Event 668780658, LumiSection 461 on stream 0 at 16-Jan-2022 18:42:28.551 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:42:29 EST Run: 316701 Event: 668995511
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -3.53516e+16 7.69497e+13-4.32655e+15 -0.00417733 0.000215525
+   7.69497e+13 1.09468e+13 8.61102e+12 6.93757e-06 1.14238e-07
+  -4.32655e+15 8.61102e+12-3.88609e+14 -0.00046945 2.42266e-05
+   -0.00417733 6.93757e-06 -0.00046945 0.000529365-2.77482e-05
+   0.000215525 1.14238e-07 2.42266e-05-2.77482e-05 6.80562e-06 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:43:26 EST Run: 316701 Event: 669911429
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -9.2523e+16-1.38925e+16-7.67607e+15 0.000884979  -0.0898606
+  -1.38925e+16  -1.928e+15-9.38201e+14 0.000122945  -0.0124854
+  -7.67607e+15-9.38201e+14 -1.5552e+15 7.09835e-05  -0.0071655
+   0.000884979 0.000122945 7.09835e-05 1.84574e-06-0.000108481
+    -0.0898606  -0.0124854  -0.0071655-0.000108481   0.0110225 ]
+%MSG
+Begin processing the 67001st record. Run 316701, Event 668695609, LumiSection 461 on stream 0 at 16-Jan-2022 18:44:08.202 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:44:45 EST Run: 316701 Event: 673213446
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.40951e+15-1.17283e+16  1.0192e+16 0.000122778-0.000124113
+  -1.17283e+16-4.43649e+16 3.85577e+16 0.000464434-0.000469485
+    1.0192e+16 3.85577e+16-8.36366e+17-0.000576405 0.000563308
+   0.000122778 0.000464434-0.000576405 9.10097e-05-8.77408e-05
+  -0.000124113-0.000469485 0.000563308-8.77408e-05 8.98291e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:44:50 EST Run: 316701 Event: 674469122
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -3.41902e+15-1.35462e+15-5.34266e+14    0.375305   -0.489087
+  -1.35462e+15-5.33063e+14-2.12438e+14    0.146966     -0.1915
+  -5.34266e+14-2.12438e+14-7.74418e+13   0.0596269  -0.0777289
+      0.375305    0.146966   0.0596269    0.104507   -0.136573
+     -0.489087     -0.1915  -0.0777289   -0.136573    0.178825 ]
+%MSG
+Begin processing the 68001st record. Run 316701, Event 674077567, LumiSection 464 on stream 0 at 16-Jan-2022 18:45:51.418 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:46:25 EST Run: 316701 Event: 673673303
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.65155e+16-3.14268e+14-1.91887e+14 0.000148827 0.000214889
+  -3.14268e+14 1.25825e+14  2.8624e+12-1.35029e-06-2.05309e-06
+  -1.91887e+14  2.8624e+12 3.99755e+14-4.42717e-06-6.16202e-06
+   0.000148827-1.35029e-06-4.42717e-06 2.18936e-05 2.91895e-05
+   0.000214889-2.05309e-06-6.16202e-06 2.91895e-05 4.09155e-05 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:46:25 EST Run: 316701 Event: 673673303
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -7.8347e+13-5.16895e+15  8.1797e+14-3.28153e-05-0.000383514
+  -5.16895e+15-2.48653e+16 3.93487e+15-0.000157859  -0.0018449
+    8.1797e+14 3.93487e+15-4.70095e+17-1.09756e-05-1.39718e-05
+  -3.28153e-05-0.000157859-1.09756e-05 1.00384e-05 7.85472e-05
+  -0.000383514  -0.0018449-1.39718e-05 7.85472e-05 0.000918045 ]
+%MSG
+Begin processing the 69001st record. Run 316701, Event 673208075, LumiSection 464 on stream 0 at 16-Jan-2022 18:47:31.961 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:48:01 EST Run: 316701 Event: 673242849
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.01852e+16 1.74309e+14 4.62636e+15  -0.0103595 -0.00197678
+   1.74309e+14 1.06945e+14-8.12808e+13 5.66026e-05 1.14538e-05
+   4.62636e+15-8.12808e+13-1.48488e+15  0.00336973 0.000643033
+    -0.0103595 5.66026e-05  0.00336973   0.0129595  0.00246582
+   -0.00197678 1.14538e-05 0.000643033  0.00246582 0.000470656 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:48:38 EST Run: 316701 Event: 673899772
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.00088e+15  -1.234e+14 1.57176e+14 6.62567e-05  0.00012328
+    -1.234e+14 8.38079e+13 4.88209e+12-3.39647e-06-6.54297e-06
+   1.57176e+14 4.88209e+12 2.10638e+14-3.84487e-06-6.59101e-06
+   6.62567e-05-3.39647e-06-3.84487e-06 3.45279e-05 6.01747e-05
+    0.00012328-6.54297e-06-6.59101e-06 6.01747e-05 0.000111442 ]
+%MSG
+Begin processing the 70001st record. Run 316701, Event 674593343, LumiSection 464 on stream 0 at 16-Jan-2022 18:49:11.385 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:50:18 EST Run: 316701 Event: 673661211
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -3.23533e+15-3.55004e+15-5.08358e+15-4.22701e-07 2.61214e-08
+  -3.55004e+15-3.69604e+15-5.29232e+15-4.40087e-07 2.71958e-08
+  -5.08358e+15-5.29232e+15 -2.0823e+15-6.18308e-07 1.02098e-07
+  -4.22701e-07-4.40087e-07-6.18308e-07 1.18601e-05-9.10446e-07
+   2.61214e-08 2.71958e-08 1.02098e-07-9.10446e-07 9.79657e-06 ]
+%MSG
+Begin processing the 71001st record. Run 316701, Event 674572614, LumiSection 464 on stream 0 at 16-Jan-2022 18:50:50.656 EST
+Begin processing the 72001st record. Run 316701, Event 673221206, LumiSection 464 on stream 0 at 16-Jan-2022 18:52:27.651 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:52:32 EST Run: 316701 Event: 673311064
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.28628e+15-1.65855e+14-3.04531e+15 -0.00618283  0.00237161
+  -1.65855e+14-1.21942e+14  8.6632e+14 -0.00578614  0.00223381
+  -3.04531e+15  8.6632e+14-8.64386e+15   0.0439542  -0.0169858
+   -0.00618283 -0.00578614   0.0439542    0.196016  -0.0757736
+    0.00237161  0.00223381  -0.0169858  -0.0757736   0.0293082 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:53:55 EST Run: 316995 Event: 593406832
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -1.58944e+16-1.13176e+17-4.00914e+13-0.000218704-0.000346898
+  -1.13176e+17-2.09803e+17-7.43218e+13-0.000405429-0.000643072
+  -4.00914e+13-7.43218e+13 7.01359e+13-2.93837e-05-2.34478e-05
+  -0.000218704-0.000405429-2.93837e-05 0.000102915 8.15949e-05
+  -0.000346898-0.000643072-2.34478e-05 8.15949e-05  0.00015309 ]
+%MSG
+Begin processing the 73001st record. Run 316995, Event 593574763, LumiSection 394 on stream 0 at 16-Jan-2022 18:54:15.541 EST
+Begin processing the 74001st record. Run 316995, Event 593095970, LumiSection 394 on stream 0 at 16-Jan-2022 18:55:59.783 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 18:57:12 EST Run: 316995 Event: 593187317
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -5.21987e+16  8.3916e+16 1.05337e+14-0.000160674 1.00652e-05
+    8.3916e+16-1.11215e+17-1.52423e+14 0.000212942-1.33402e-05
+   1.05337e+14-1.52423e+14 5.00209e+13-1.42154e-05 -4.0452e-06
+  -0.000160674 0.000212942-1.42154e-05  5.7227e-05 1.65531e-05
+   1.00652e-05-1.33402e-05 -4.0452e-06 1.65531e-05 2.71965e-05 ]
+%MSG
+Begin processing the 75001st record. Run 316995, Event 592755523, LumiSection 394 on stream 0 at 16-Jan-2022 18:57:48.181 EST
+Begin processing the 76001st record. Run 316995, Event 594017142, LumiSection 394 on stream 0 at 16-Jan-2022 18:59:27.282 EST
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 19:00:39 EST Run: 316995 Event: 592856134
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[  -1.7061e+12  7.7585e+11-3.00128e+12  -0.0471468   0.0987597
+    7.7585e+11-3.26838e+11 1.20207e+12   0.0191819  -0.0401809
+  -3.00128e+12 1.20207e+12 2.29198e+12  -0.0533996    0.111844
+    -0.0471468   0.0191819  -0.0533996    0.201204   -0.419877
+     0.0987597  -0.0401809    0.111844   -0.419877    0.878128 ]
+%MSG
+%MSG-w FreeTrajectoryState:   InclusiveCandidateVertexFinder:inclusiveCandidateVertexFinderCvsL  16-Jan-2022 19:00:51 EST Run: 316995 Event: 593877432
+(was exception) FreeTrajectoryState: attempt to access errors when none available
+Curvilinear error valid/values :0
+[ -2.59833e+13-2.57135e+13 9.53458e+13-0.000101469 8.39661e-05
+  -2.57135e+13-5.33476e+12 2.90597e+13 -5.4683e-05 4.54508e-05
+   9.53458e+13 2.90597e+13-5.98425e+13 9.87084e-05-8.17014e-05
+  -0.000101469 -5.4683e-05 9.87084e-05-0.000223055 0.000186391
+   8.39661e-05 4.54508e-05-8.17014e-05 0.000186391-0.000152584 ]
+%MSG
+Begin processing the 77001st record. Run 316995, Event 592680902, LumiSection 394 on stream 0 at 16-Jan-2022 19:01:07.690 EST
+16-Jan-2022 19:02:11 EST  Closed file file:/cms/se/phedex/store/data/Run2018A/EGamma/MINIAOD/UL2018_MiniAODv2-v1/230000/1DC29AF8-7091-4245-A0D8-CFDF650310CC.root
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 FreeTrajectoryState  -w InclusiveCandida                     114      114
+    2 TriggerOutputBranche -w NanoAODOutputMod                      26       26
+    3 L1PrefireWeightProdu -e L1PrefiringWeigh                       2        2
+    4 fileAction           -s file_close                             1        1
+    5 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 FreeTrajectoryState  316701/407247268 316701/406755169 316995/593877432
+    2 TriggerOutputBranches 316701/407570858 316701/407570858 316701/407570858
+    3 L1PrefireWeightProducer pre-events       pre-events       
+    4 fileAction           PostGlobalEndRun                  
+    5 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning               140                 140
+Error                   2                   2
+System                  3                   3
+
+dropped waiting message count 0

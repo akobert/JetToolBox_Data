@@ -11,7 +11,7 @@ if __name__ == "__main__":
 	newline1 = "fileNames = cms.untracked.vstring('"+str(readLine[:-1])+"'),"
 	
 	oldline2 = "file:/cms/xaastorage/NanoAOD/2018/JUNE19/VectorZPrimeGammaToQQGamma_M25/jetToolbox_nano_m25signal.root"
-	newline2 = "file:/cms/akobert/UL/Data/RunC/jetToolbox_dataC2018_"+str(process)+".root"
+	newline2 = "file:/cms/akobert/BTag/Data/DataC/jetToolbox_dataC2018_BTagTest_"+str(process)+".root"
 
 	for line in template:
 		newFile.write(line.replace(oldline1, newline1).replace(oldline2, newline2))

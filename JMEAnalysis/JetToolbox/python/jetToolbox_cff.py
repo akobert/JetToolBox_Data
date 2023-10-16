@@ -25,6 +25,8 @@ from PhysicsTools.PatAlgos.tools.helpers import getPatAlgosToolsTask, addToProce
 from PhysicsTools.NanoAOD.common_cff import *
 from collections import OrderedDict
 
+from RecoBTag.ONNXRuntime.pfParticleNet_cff import pfMassDecorrelatedParticleNetJetTags #Added Line
+
 def jetToolbox( proc, jetType, jetSequence, outputFile,
 		updateCollection='', updateCollectionSubjets='',
 		newPFCollection=False, nameNewPFCollection = '',
@@ -54,6 +56,7 @@ def jetToolbox( proc, jetType, jetSequence, outputFile,
 		addEnergyCorrFunc=False, ecfType = "N", ecfBeta = 1.0, ecfN3 = False,
 		addEnergyCorrFuncSubjets=False, ecfSubjetType = "N", ecfSubjetBeta = 1.0, ecfSubjetN3 = False,
 		verbosity=2, 	# 0 = no printouts, 1 = warnings only, 2 = warnings & info, 3 = warnings, info, debug
+		runParticleNetMD=False,
 		):
 
 
@@ -61,7 +64,7 @@ def jetToolbox( proc, jetType, jetSequence, outputFile,
 	#######  Initializing some global variables
 	print("test8")
 	print(runOnMC)
-	runOnMC = False #for testing purposes
+#	runOnMC = False #for testing purposes
 	elemToKeep = []
 	jetSeq = cms.Sequence()
 	genParticlesLabel = ''
@@ -177,6 +180,11 @@ def jetToolbox( proc, jetType, jetSequence, outputFile,
 	if (bTagDiscriminators is not None) and verbosity>=2: print('|---- jetToolBox: Adding these btag discriminators: '+str(bTagDiscriminators)+' in the jet collection.')
         if (bTagDiscriminators is not None) and any( 'Deep' in i for i in bTagDiscriminators ) and not (jetALGO=='AK4' and PUMethod=='CHS'): print('|---- jetToolBox: DeepCSV and DeepFlavour btag discriminators were trained for AK4 CHS jets. You are trying to use it in other configuration. Use it at your own risk.')
 	#################################################################################
+	#Adding ParticleNetMD Tags
+	if runParticleNetMD:
+		flav_names = ["probQCDothers", "probQCDb", "probQCDbb", "probQCDc", "probQCDcc", "probXqq", "probXbb", "probXcc"]
+		pfMassDecorrelatedParticleNetJetTagsProbs = ['pfMassDecorrelatedParticleNetJetTags:' + n for n in flav_names]
+		bTagDiscriminators += pfMassDecorrelatedParticleNetJetTagsProbs
 
 
 	#################################################################################
@@ -438,6 +446,7 @@ def jetToolbox( proc, jetType, jetSequence, outputFile,
 		JEC = ( JETCorrPayload, JETCorrLevels, 'None' )
 		if verbosity>=2: print('|---- jetToolBox: Applying these corrections: '+str(JEC))
 		#########################################################################
+
 
 		####### updating JET collection
 		updateJetCollection(
@@ -1397,7 +1406,6 @@ def jetToolbox( proc, jetType, jetSequence, outputFile,
 
             for varName, varDef in jetVariables.iteritems(): setattr( getattr( proc, mod['jetToolboxJetTable'] ).variables, varName.replace(":","_"), varDef )
             if runOnMC:
-		print("bad test5")
                 setattr( getattr( proc, mod['jetToolboxJetTable'] ).variables,  'partonFlavor', Var('partonFlavour()', int, doc="flavour from parton matching" ) )
                 setattr( getattr( proc, mod['jetToolboxJetTable'] ).variables,  'hadronFlavor', Var('hadronFlavour()', int, doc="flavour from hadron matching" ) )
 
@@ -1447,7 +1455,6 @@ def jetToolbox( proc, jetType, jetSequence, outputFile,
 	#################################################################################
 	#### removing mc matching for data
 	if runOnData:
-		print("test12")
 		from PhysicsTools.PatAlgos.tools.coreTools import removeMCMatching
 		removeMCMatching(proc, names=['Jets'], outputModules=[outputFile])
 
